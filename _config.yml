@@ -14,13 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: KOSHIGOE.Write(something)
-email: koshigoeb @ gmail.com
+email: "koshigoeb @ gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
   Write something.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://koshigoe.github.io"
 twitter_username: koshigoe
 github_username:  koshigoe
+is_project_page: true
 show_downloads: false
 google_analytics: UA-56137-18
 
