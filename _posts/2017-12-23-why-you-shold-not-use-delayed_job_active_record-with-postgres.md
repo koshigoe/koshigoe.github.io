@@ -99,7 +99,7 @@ UPDATE "delayed_jobs"
             ) OR
             locked_by = '{This Worker Name}'
           ) AND failed_at IS NULL
-        ) AND "delayed_jobs"."id" = 4
+        ) AND "delayed_jobs"."id" = {Job ID}
       ORDER BY priority ASC, run_at ASC
    )
 ```
@@ -142,8 +142,8 @@ WITH cte AS (
 )
 UPDATE "delayed_jobs" AS t
    SET
-     locked_at = {Current Time}
-   , locked_by = {This Worker Name}
+     locked_at = '{Current Time}'
+   , locked_by = '{This Worker Name}'
   FROM cte
  WHERE t.id = cte.id
 RETURNING *
@@ -153,7 +153,7 @@ RETURNING *
 Appendix
 ----
 
-### Why do you send Pull Request?
+### Why don't you send Pull Request?
 
 The `delayed_job_active_record` has opened some PRs since 2013. It seems like an inactive project.
 And this bug reported to `delayed_job` a year ago, but reacted a few peaple.
