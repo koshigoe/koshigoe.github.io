@@ -21,9 +21,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://koshigoe.github.io"
 twitter_username: koshigoe
 github_username:  koshigoe
-is_project_page: true
 show_downloads: false
 google_analytics: UA-56137-18
+
+github:
+  is_project_page: true
+  repository_name: "koshigoe.github.io"
+  owner_url: "https://github.com/koshigoe"
+  owner_name: "koshigoe"
 
 # Build settings
 markdown: kramdown
