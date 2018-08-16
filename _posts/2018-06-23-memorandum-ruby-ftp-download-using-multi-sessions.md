@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Memorandum: How to showten download time of FTP in Ruby?"
+title:  "Memorandum: How to shorten download time of FTP in Ruby?"
 date:   2018-06-23 16:00:00 +09:00
 categories:
 - Ruby
